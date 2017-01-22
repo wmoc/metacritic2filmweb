@@ -1,0 +1,29 @@
+
+.metascore_w {
+    vertical-align: middle;
+    text-align: center;
+    color: #fff!important;
+    font-family: Arial,Helvetica,sans-serif;
+    font-style: normal!important;
+    font-weight: bold!important;
+    background-color: transparent;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    font-size: 17px;
+    z-index: 1;
+    position:absolute;
+    right: 0px;
+}
+
+.metascore_w.negative,.metascore_w.bad,.metascore_w.score_terrible,.metascore_w.score_unfavorable {
+    background-color: #f00
+}
+
+.metascore_w.mixed,.metascore_w.forty,.metascore_w.game.fifty,.metascore_w.score_mixed {
+    background-color: #fc3
+}
+
+.metascore_w.positive,.metascore_w.good,.metascore_w.sixtyone,.metascore_w.game.seventyfive,.metascore_w.score_favorable,.metascore_w.score_outstanding {
+    background-color: #6c3
+}

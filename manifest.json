@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Punkty Metacritic na stronie repertuaru kina na Filmwebie",
+  "description": "Punkty Metacritic na stronie repertuaru kina na Filmwebie",
+  "version": "1.0",
+
+  "browser_action": {
+  },
+  "permissions": [
+    "activeTab",
+    "http://www.metacritic.com/",
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.filmweb.pl/*","https://www.filmweb.pl/*"],
+      "js": ["jquery.js", "filmweb.js"],
+
+      "css" : ["metacritic.css"]
+    }
+  ]
+}
